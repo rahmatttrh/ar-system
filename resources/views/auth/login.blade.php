@@ -4,7 +4,7 @@
 
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>E-Fleet - Login</title>
+	<title>AR-SYSTEM - Login</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="{{asset('/img/anchor.png')}}" type="image/x-icon"/>
 
@@ -41,14 +41,14 @@
 				<div class="card o-hidden border-0 shadow-lg my-5">
 					<div class="card-body p-0">
 						<div class="row">
-							<div class="col-lg-6 d-none d-lg-block " style="background-image: url({{asset('img/vessel/vessel1.jpg')}});background-repeat: no-repeat;background-size: cover;border-radius: 5px;">
+							<div class="col-lg-6 d-none d-lg-block " style="background-image: url({{asset('img/bg/kj4_com.png')}});background-repeat: no-repeat;background-size: cover;border-radius: 5px;">
 								<img class="mt-3" src="{{asset('img/logo/enc2.jpg')}}" alt="">
 							</div>
 							<div class="col-lg-6">
 								<div class="p-5">
 									<div class="text-center">
-										<h4 class="text-gray-900">Welcome Back!</h4>
-										<h1 class="font-weight-bold">MY-ENC</h1>
+										<h4 class="text-gray-900">Welcome to</h4>
+										<h1 class="font-weight-bold">AR-SYSTEM</h1>
 									</div>
 									<hr>
 									<form class="user" method="POST" action="{{ route('login') }}">
@@ -80,11 +80,11 @@
 										<button type="submit" class="btn btn-primary btn-block">Login</button>
 									
 										<hr>
-										<p class="small">E-Fleet adalah system management Material Request dan PMS Monitoring yang digunakan oleh PT PEIP</p>
+										<p class="small">AR-SYSTEM</p>
 									</form>
 									<hr>
 									<div class="login-account">
-										<span class="msg">Copyright &copy; 2021 ENC IT</span>
+										<span class="msg">Copyright &copy; 2025 ENC IT</span>
 									</div>
 								</div>
 							</div>
