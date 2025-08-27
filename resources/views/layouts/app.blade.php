@@ -3,11 +3,11 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Index | Urbix Admin & Dashboards Template </title>
+    <title>AR - System Dashboard </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta content="Admin & Dashboards Template" name="description" />
     <meta content="Pixeleyez" name="author" />
-    
+
     <!-- layout setup -->
     <script type="module" src="{{asset('urbix/js/layout-setup.js')}}"></script>
     <link rel="stylesheet" href="{{asset('urbix/libs/leaflet/leaflet.css')}}">
@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" />
     <!--datatable responsive css-->
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
-    
+
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{asset('urbix/flaticon/uranus.png')}}">    
+    <link rel="shortcut icon" href="{{asset('urbix/flaticon/uranus.png')}}">
     <!-- plugin css -->
     <link rel="stylesheet" type="text/css" href="{{asset('urbix/libs/jsvectormap/jsvectormap.min.css')}}">
 
@@ -307,7 +307,7 @@
             </div>
         </header>
         <!-- END Header -->
-        
+
         <!-- Search Modal -->
         <div class="modal fade search-modal" id="searchModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -1789,8 +1789,8 @@
         </aside>
         <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
         <main class="app-wrapper">
-      
-     
+
+
          @yield('content')
       </main>
 
@@ -1878,9 +1878,9 @@
                           </div>
                           <!-- end col -->
                       </div>
-      
+
                       <h6 class="my-5 fw-semibold">Content Width:</h6>
-      
+
                       <div class="row gy-3">
                           <div class="col-6">
                               <div class="border overflow-hidden rounded-2">
@@ -1934,9 +1934,9 @@
                           </div>
                           <!-- end col -->
                       </div>
-      
+
                       <h6 class="my-5 fw-semibold">Layout Direction:</h6>
-      
+
                       <div class="row gy-3">
                           <div class="col-6">
                               <div class="border overflow-hidden rounded-2">
@@ -1990,9 +1990,9 @@
                           </div>
                           <!-- end col -->
                       </div>
-      
+
                       <h6 class="my-5 fw-semibold">Layout Mode:</h6>
-      
+
                       <div class="row gy-3">
                           <div class="col-6">
                               <div>
@@ -2071,9 +2071,9 @@
                           </div>
                           <!-- end col -->
                       </div>
-      
+
                       <h6 class="my-5 fw-semibold">Sidebar Size:</h6>
-      
+
                       <div class="row gy-3">
                           <div class="col-6">
                               <div class="border overflow-hidden rounded-2">
@@ -2177,9 +2177,9 @@
                           </div>
                           <!-- end col -->
                       </div>
-      
+
                       <h6 class="my-5 fw-semibold">Sidebar Color:</h6>
-      
+
                       <div class="row gy-3">
                           <div class="col-6">
                               <div class="border overflow-hidden rounded-2">

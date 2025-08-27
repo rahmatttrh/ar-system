@@ -4,7 +4,7 @@
       <div class="logo-header " >
          <a href="/" class="logo " >
             {{-- <img src="{{asset('img/logoazzara.svg')}}" alt="navbar brand" class="navbar-brand"> --}}
-            <span class="navbar-brand text-white font-weight-bold font-italic">MY ENC  </span>
+            <span class="navbar-brand text-white font-weight-bold font-italic">MY ENC </span>
          </a>
          <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
@@ -30,7 +30,7 @@
                   </a>
                </li>
 
-            
+
 
                <li class="nav-item dropdown hidden-caret">
                   <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
@@ -42,7 +42,7 @@
                         <li>
                            <div class="user-box">
                               <div class="avatar-lg"><img src="{{asset('img/businessman.png')}}" alt="image profile" class="avatar-img bg-info rounded"></div>
-                              
+
                               <div class="u-text">
                                     <h4>Admin</h4>
                                     <p class="text-muted">admin@gmail.com</p>
@@ -52,19 +52,19 @@
                         </li>
                         <li>
                            <div class="dropdown-divider"></div>
-                           
+
                            {{-- <div class="dropdown-divider"></div> --}}
                            <a class="dropdown-item" href="">
                               My Profile
                            </a>
-                           
-                           
+
+
                            @if (Route::has('password.request'))
                               <a class="dropdown-item" href="{{ route('password.request') }}">
                                     Reset Password
                               </a>
                            @endif
-                           
+
                            {{-- <a class="dropdown-item" href="{{route('change.password')}}">Change Password</a> --}}
                            <div class="dropdown-divider"></div>
                            <a class="dropdown-item" href="{{ route('logout') }}"
@@ -79,7 +79,7 @@
                         </li>
                   </ul>
                </li>
-               
+
             </ul>
          </div>
       </nav>
