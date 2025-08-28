@@ -37,7 +37,7 @@
     <link href="{{ asset('urbix/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css">
 
     {{-- Table Icons --}}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.4.0/dist/css/tabler.min.css" />
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.4.0/dist/css/tabler.min.css" /> --}}
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet"
@@ -332,23 +332,23 @@
                             <button class="header-profile-btn btn gap-1 text-start" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <div class="d-none d-xl-block pe-2">
-                                    <span class="d-block mb-0 fs-12 fw-semibold">Jaydon Levin</span>
-                                    <span class="d-block mb-0 fs-10 text-muted">jaydon@gmail.com</span>
+                                    <span class="d-block mb-0 fs-12 fw-semibold">{{ Auth::user()->name }}</span>
+                                    <span class="d-block mb-0 fs-10 text-muted">{{ Auth::user()->email }}</span>
                                 </div>
                                 <span class="header-btn btn position-relative">
-                                    <img src="{{ asset('urbix/images/avatar/avatar-3.jpg') }}" alt="Avatar Image"
+                                    <img src="{{ asset('urbix/images/avatar/dummy-avatar.jpg') }}" alt="Avatar Image"
                                         class="img-fluid rounded-circle">
                                 </span>
                             </button>
                             <div class="dropdown-menu dropdown-mega-sm header-dropdown-menu p-3">
                                 <div class="border-bottom pb-2 mb-2 d-flex align-items-center gap-2">
-                                    <img src="{{ asset('urbix/images/avatar/avatar-3.jpg') }}" alt="Avatar Image"
+                                    <img src="{{ asset('urbix/images/avatar/dummy-avatar.jpg') }}" alt="Avatar Image"
                                         class="avatar-md">
                                     <div>
                                         <a href="javascript:void(0)">
-                                            <h6 class="mb-0 lh-base">Jaydon Levin</h6>
+                                            <h6 class="mb-0 lh-base">{{ Auth::user()->name }}</h6>
                                         </a>
-                                        <p class="mb-0 fs-13 text-muted">jaydon@gmail.com</p>
+                                        <p class="mb-0 fs-13 text-muted">{{ Auth::user()->email }}</p>
                                     </div>
                                 </div>
                                 <ul class="list-unstyled mb-1 border-bottom pb-1">
@@ -2484,7 +2484,7 @@
     <!-- END page -->
 
     <!-- JAVASCRIPT -->
-    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.4.0/dist/js/tabler.min.js"></script>
+    {{-- <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.4.0/dist/js/tabler.min.js"></script> --}}
     <script src="{{ asset('urbix/libs/swiper/swiper-bundle.min.js') }}"></script>
     <script src="{{ asset('urbix/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('urbix/libs/simplebar/simplebar.min.js') }}"></script>

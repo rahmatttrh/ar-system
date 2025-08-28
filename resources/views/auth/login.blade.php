@@ -15,8 +15,7 @@
             },
             custom: {
                 "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"],
-                urls: ['{{ asset('
-                					css / fonts.css ') }}']
+                urls: ['{{ asset('css / fonts.css ') }}']
             },
             active: function() {
                 sessionStorage.fonts = true;
