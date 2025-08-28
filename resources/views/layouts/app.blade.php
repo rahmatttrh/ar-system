@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8" />
     <title>AR - System Dashboard </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -35,6 +36,9 @@
     <!-- App Css-->
     <link href="{{ asset('urbix/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css">
 
+    {{-- Table Icons --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.4.0/dist/css/tabler.min.css" />
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
@@ -45,7 +49,7 @@
 <body>
 
     <!-- Begin page -->
-<div id="layout-wrapper">
+    <div id="layout-wrapper">
 
         <!-- Begin Header -->
         <header class="app-header" id="appHeader">
@@ -2354,7 +2358,6 @@
 
                         <h6 class="my-5 fw-semibold">Sidebar Color:</h6>
 
-<<<<<<< HEAD
                         <div class="row gy-3">
                             <div class="col-6">
                                 <div class="border overflow-hidden rounded-2">
@@ -2479,117 +2482,9 @@
         <!-- END Footer -->
     </div>
     <!-- END page -->
-=======
-                      <div class="row gy-3">
-                          <div class="col-6">
-                              <div class="border overflow-hidden rounded-2">
-                                  <input id="sidebar-light" name="data-sidebar-color" type="radio" value="light" class="form-check-input" checked>
-                                  <label class="form-check-label p-0 avatar-3xl w-100 rounded-2" for="sidebar-light">
-                                      <span class="d-flex h-100">
-                                          <span class="flex-shrink-0">
-                                              <span class="bg-light-subtle d-flex h-100 flex-column gap-1 p-2">
-                                                  <span class="d-block p-1 px-2 bg-light rounded mb-2"></span>
-                                                  <span class="d-block p-1 px-2 pb-0 bg-light"></span>
-                                                  <span class="d-block p-1 px-2 pb-0 bg-light"></span>
-                                                  <span class="d-block p-1 px-2 pb-0 bg-light"></span>
-                                              </span>
-                                          </span>
-                                          <span class="flex-grow-1">
-                                              <span class="d-flex h-100 flex-column">
-                                                  <span class="bg-light-subtle d-block p-1"></span>
-                                                  <span class="d-block h-100 bg-primary-subtle m-3 rounded-2"> </span>
-                                                  <span class="bg-light-subtle d-block p-1 mt-auto"></span>
-                                              </span>
-                                          </span>
-                                      </span>
-                                  </label>
-                              </div>
-                              <h5 class="fs-13 text-center mt-2">Light</h5>
-                            </div>
-                            <div class="col-6">
-                              <div class="border overflow-hidden rounded-2">
-                                  <input id="sidebar-dark" name="data-sidebar-color" type="radio" value="dark" class="form-check-input">
-                                  <label class="form-check-label p-0 avatar-3xl w-100 rounded-2" for="sidebar-dark">
-                                      <span class="d-flex h-100">
-                                          <span class="flex-shrink-0">
-                                              <span class="bg-primary d-flex h-100 flex-column gap-1 p-2">
-                                                  <span class="d-block p-1 px-2 bg-light-subtle opacity-25 rounded mb-2"></span>
-                                                  <span class="d-block p-1 px-2 pb-0 bg-light-subtle opacity-25"></span>
-                                                  <span class="d-block p-1 px-2 pb-0 bg-light-subtle opacity-25"></span>
-                                                  <span class="d-block p-1 px-2 pb-0 bg-light-subtle opacity-25"></span>
-                                              </span>
-                                          </span>
-                                          <span class="flex-grow-1">
-                                              <span class="d-flex h-100 flex-column">
-                                                  <span class="bg-light-subtle d-block p-1"></span>
-                                                  <span class="d-block h-100 bg-primary-subtle m-3 rounded-2"> </span>
-                                                  <span class="bg-light-subtle d-block p-1 mt-auto"></span>
-                                              </span>
-                                          </span>
-                                      </span>
-                                  </label>
-                              </div>
-                              <h5 class="fs-13 text-center mt-2">Dark</h5>
-                          </div>
-                          <!-- end col -->
-                      </div>
-                      <div id="sidebar-color" class="my-5">
-                          <h6 class="mb-0 fw-semibold">Primary Color</h6>
-                          <p class="text-muted">Choose a color of Primary.</p>
-                          <div class="d-flex flex-wrap gap-3">
-                              <div class="form-check sidebar-setting card-radio">
-                                  <input class="form-check-input" type="radio" name="data-theme-colors" id="themeColor-01" value="default" checked>
-                                  <label class="form-check-label avatar-md rounded" for="themeColor-01"></label>
-                              </div>
-                              <div class="form-check sidebar-setting card-radio">
-                                  <input class="form-check-input" type="radio" name="data-theme-colors" id="themeColor-02" value="cyan">
-                                  <label class="form-check-label avatar-md rounded" for="themeColor-02"></label>
-                              </div>
-                              <div class="form-check sidebar-setting card-radio">
-                                  <input class="form-check-input" type="radio" name="data-theme-colors" id="themeColor-03" value="blue">
-                                  <label class="form-check-label avatar-md rounded" for="themeColor-03"></label>
-                              </div>
-                              <div class="form-check sidebar-setting card-radio">
-                                  <input class="form-check-input" type="radio" name="data-theme-colors" id="themeColor-04" value="purple">
-                                  <label class="form-check-label avatar-md rounded" for="themeColor-04"></label>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="flex items-center justify-end gap-2 modal-footer pt-6 border-top">
-                          <button type="button" class="btn btn-light" id="resetBtn">
-                              <i class="ri-reset-right-line"></i> Reset Layouts
-                          </button>
-                          {{-- <button type="button" class="btn btn-danger">
-                              <i class="ri-shopping-bag-3-line"></i> Buy Now
-                          </button> --}}
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>        <!-- Begin scroll top -->
-      <div class="progress-wrap d-flex align-items-center justify-content-center cursor-pointer h-40px w-40px position-fixed" id="progress-scroll">
-        <svg class="progress-circle w-100 h-100 position-absolute" viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="45" class="progress" />
-        </svg>
-        <i class="ri-arrow-up-line fs-16 z-1 position-relative text-primary"></i>
-      </div>
-      <!-- END scroll top -->        <!-- Begin Footer -->
-      <footer class="footer">
-          <div class="container-fluid">
-              <div class="d-flex justify-content-between align-items-center gap-2">
-                  <script>document.write(new Date().getFullYear())</script> © Urbix.
-                  <div class="text-sm-end d-none d-sm-block">
-                      Design & Develop by Pixeleyez
-                  </div>
-              </div>
-          </div>
-      </footer>
-      <!-- END Footer -->
-  </div>
-  <!-- END page -->
->>>>>>> 90fc60e209181a85f5eaa6198a2af4cab449e7d8
 
     <!-- JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.4.0/dist/js/tabler.min.js"></script>
     <script src="{{ asset('urbix/libs/swiper/swiper-bundle.min.js') }}"></script>
     <script src="{{ asset('urbix/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('urbix/libs/simplebar/simplebar.min.js') }}"></script>
