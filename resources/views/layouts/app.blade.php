@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="utf-8" />
     <title>AR - System Dashboard </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -42,7 +41,7 @@
 <body>
 
     <!-- Begin page -->
-    <div id="layout-wrapper">
+<div id="layout-wrapper">
 
         <!-- Begin Header -->
         <header class="app-header" id="appHeader">
@@ -2205,8 +2204,8 @@
                                   </label>
                               </div>
                               <h5 class="fs-13 text-center mt-2">Light</h5>
-                          </div>
-                          <div class="col-6">
+                            </div>
+                            <div class="col-6">
                               <div class="border overflow-hidden rounded-2">
                                   <input id="sidebar-dark" name="data-sidebar-color" type="radio" value="dark" class="form-check-input">
                                   <label class="form-check-label p-0 avatar-3xl w-100 rounded-2" for="sidebar-dark">
@@ -2259,9 +2258,9 @@
                           <button type="button" class="btn btn-light" id="resetBtn">
                               <i class="ri-reset-right-line"></i> Reset Layouts
                           </button>
-                          <button type="button" class="btn btn-danger">
+                          {{-- <button type="button" class="btn btn-danger">
                               <i class="ri-shopping-bag-3-line"></i> Buy Now
-                          </button>
+                          </button> --}}
                       </div>
                   </div>
               </div>
