@@ -93,7 +93,7 @@
 	{{-- <link rel="icon" href="{{asset('img/icon.ico')}}" type="image/x-icon"/> --}}
     <link rel="icon" href="{{asset('/img/anchor.png')}}" type="image/x-icon"/>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-   
+
 	<!-- Fonts and icons -->
 	<script src="{{asset('js/plugin/webfont/webfont.min.js')}}"></script>
 	<script>
@@ -136,7 +136,7 @@
 
         @yield('content')
 
-        
+
 
 </div>
 </div>
@@ -197,7 +197,7 @@
         // $('.basic-datatables').DataTable({
         // });
 
-        
+
       $('.select2').select2({});
       $('#material_usage').select2({});
       // $('.select2b').select2({});
@@ -291,7 +291,7 @@
 				time: 1000,
 				delay: 0,
 			    });
-                
+
             });
         </script>
     @endif
@@ -313,7 +313,7 @@
 				time: 1000,
 				delay: 0,
 			    });
-                
+
             });
         </script>
     @endif
@@ -336,7 +336,7 @@
 				time: 1000,
 				delay: 0,
 			    });
-                
+
             });
         </script>
         {{-- {{Session::forget('warning')}} --}}
@@ -345,7 +345,7 @@
     @endif
 
 
-    @if ($errors->any())  
+    @if ($errors->any())
         @foreach ($errors->all() as $error)
         <script>
             $(document).ready(function() {
@@ -365,9 +365,9 @@
                 });
             });
         </script>
-        @endforeach     
+        @endforeach
     @endif
-   
+
 
 </body>
 </html>
