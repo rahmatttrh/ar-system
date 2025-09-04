@@ -52,10 +52,10 @@
                                     <form class="user" method="POST" action="{{ route('login') }}">
                                         @csrf
                                         <div class="form-group form-group-default">
-                                            <label for="email" class="placeholder"><b>Email</b></label>
-                                            <input id="email" name="email" type="email"
-                                                class="form-control @error('email') is-invalid @enderror" required>
-                                            @error('email')
+                                            <label for="username" class="placeholder"><b>Username</b></label>
+                                            <input id="username" name="username" type="username"
+                                                class="form-control @error('username') is-invalid @enderror" required>
+                                            @error('username')
                                                 <span class="invalid-feedback bg-danger p-2 rounded mb-2 text-light"
                                                     role="alert">
                                                     <strong>Fail! {{ $message }}</strong>

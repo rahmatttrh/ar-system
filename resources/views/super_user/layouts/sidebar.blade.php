@@ -1,3 +1,4 @@
+{{-- Desktop --}}
 <aside class="pe-app-sidebar" id="sidebar">
     <div class="pe-app-sidebar-logo px-6 d-flex align-items-center position-relative">
         <!--begin::Brand Image-->
@@ -48,159 +49,33 @@
                         </li>
                     </ul>
                 </li>
+                <!-- Master -->
+                <li class="pe-menu-title">Master</li>
                 <li class="pe-slide pe-has-sub">
-                    <a href="#collapseApplications" class="pe-nav-link" data-bs-toggle="collapse" aria-expanded="false"
-                        aria-controls="collapseApplications">
-                        <i class="ri-apps-2-line pe-nav-icon"></i>
-                        <span class="pe-nav-content">Applications</span>
-                        <i class="ri-arrow-down-s-line pe-nav-arrow"></i>
+                    <a href="#collapseMasterD1" class="pe-nav-link" data-bs-toggle="collapse" aria-expanded="false"
+                        aria-controls="collapseMasterD1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-car-crane">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M7 18h8m4 0h2v-6a5 5 0 0 0 -5 -5h-1l1.5 5h4.5" />
+                            <path d="M12 18v-11h3" />
+                            <path d="M3 17v-5h9" />
+                            <path d="M4 12v-6l18 -3v2" />
+                            <path d="M8 12v-4l-4 -2" />
+                            <span class="pe-nav-content">Alat Berat</span>
+                            <i class="ri-arrow-down-s-line pe-nav-arrow"></i>
                     </a>
-                    <ul class="pe-slide-menu collapse" id="collapseApplications">
-                        <li class="pe-slide-item">
-                            <a href="apps-calendar.html" class="pe-nav-link">
-                                Calendar
-                            </a>
+                    <ul class="pe-slide-menu collapse" id="collapseMasterD1">
+                        <li class="slide pe-nav-content1">
+                            <a href="javascript:void(0)">Alat Berat</a>
                         </li>
                         <li class="pe-slide-item">
-                            <a href="apps-chat.html" class="pe-nav-link">
-                                Chat
+                            <a href="auth-signin.html" class="pe-nav-link">
+                                Data Alat Berat
                             </a>
-                        </li>
-                        <li class="pe-slide-item">
-                            <a href="apps-email.html" class="pe-nav-link">
-                                Email
-                            </a>
-                        </li>
-                        <li class="pe-slide-item">
-                            <a href="apps-kanban.html" class="pe-nav-link">
-                                Kanban
-                            </a>
-                        </li>
-                        <li class="pe-slide-item pe-has-sub">
-                            <a href="#collapseECommerce" class="pe-nav-link" data-bs-toggle="collapse"
-                                aria-expanded="false" aria-controls="collapseECommerce">
-                                <span class="pe-nav-sub-content">E-Commerce</span>
-                                <i class="ri-arrow-down-s-line pe-nav-arrow"></i>
-                            </a>
-                            <ul class="pe-slide-menu collapse" id="collapseECommerce">
-                                <li class="pe-slide-item">
-                                    <a href="apps-ecommerce-products.html" class="pe-nav-link">
-                                        Products
-                                    </a>
-                                </li>
-                                <li class="pe-slide-item">
-                                    <a href="apps-ecommerce-products-list.html" class="pe-nav-link">
-                                        Product List
-                                    </a>
-                                </li>
-                                <li class="pe-slide-item">
-                                    <a href="apps-ecommerce-products-details.html" class="pe-nav-link">
-                                        Product Details
-                                    </a>
-                                </li>
-                                <li class="pe-slide-item">
-                                    <a href="apps-ecommerce-create-products.html" class="pe-nav-link">
-                                        Create Product
-                                    </a>
-                                </li>
-                                <li class="pe-slide-item">
-                                    <a href="apps-ecommerce-customer.html" class="pe-nav-link">
-                                        Customer
-                                    </a>
-                                </li>
-                                <li class="pe-slide-item">
-                                    <a href="apps-ecommerce-customer-details.html" class="pe-nav-link">
-                                        Customer Details
-                                    </a>
-                                </li>
-                                <li class="pe-slide-item">
-                                    <a href="apps-ecommerce-order.html" class="pe-nav-link">
-                                        Orders
-                                    </a>
-                                </li>
-                                <li class="pe-slide-item">
-                                    <a href="apps-ecommerce-order-details.html" class="pe-nav-link">
-                                        Order Details
-                                    </a>
-                                </li>
-                                <li class="pe-slide-item">
-                                    <a href="apps-ecommerce-cart.html" class="pe-nav-link">
-                                        Cart
-                                    </a>
-                                </li>
-                                <li class="pe-slide-item">
-                                    <a href="apps-ecommerce-checkout.html" class="pe-nav-link">
-                                        Checkout
-                                    </a>
-                                </li>
-                                <li class="pe-slide-item">
-                                    <a href="apps-ecommerce-wishlist.html" class="pe-nav-link">
-                                        Wishlist
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="pe-slide-item pe-has-sub">
-                            <a href="#collapseSchool" class="pe-nav-link" data-bs-toggle="collapse"
-                                aria-expanded="false" aria-controls="collapseSchool">
-                                <span class="pe-nav-sub-content">School</span>
-                                <i class="ri-arrow-down-s-line pe-nav-arrow"></i>
-                            </a>
-                            <ul class="pe-slide-menu collapse" id="collapseSchool">
-                                <li class="pe-slide-item pe-has-sub">
-                                    <a href="#collapseStudents" class="pe-nav-link" data-bs-toggle="collapse"
-                                        aria-expanded="false" aria-controls="collapseStudents">
-                                        <span class="pe-nav-sub-content">Student</span>
-                                        <i class="ri-arrow-down-s-line pe-nav-arrow"></i>
-                                    </a>
-                                    <ul class="pe-slide-menu collapse" id="collapseStudents">
-                                        <li class="pe-slide-item">
-                                            <a href="apps-school-students.html" class="pe-nav-link">
-                                                All Students
-                                            </a>
-                                        </li>
-                                        <li class="pe-slide-item">
-                                            <a href="apps-school-admission-form.html" class="pe-nav-link">
-                                                Admission Form
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="pe-slide-item pe-has-sub">
-                                    <a href="#collapseTeacher" class="pe-nav-link" data-bs-toggle="collapse"
-                                        aria-expanded="false" aria-controls="collapseTeacher">
-                                        <span class="pe-nav-sub-content">Teacher</span>
-                                        <i class="ri-arrow-down-s-line pe-nav-arrow"></i>
-                                    </a>
-                                    <ul class="pe-slide-menu collapse" id="collapseTeacher">
-                                        <li class="pe-slide-item">
-                                            <a href="apps-teacher.html" class="pe-nav-link">
-                                                All Teacher
-                                            </a>
-                                        </li>
-                                        <li class="pe-slide-item">
-                                            <a href="apps-teacher-schedule.html" class="pe-nav-link">
-                                                Schedule
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="pe-slide-item">
-                                    <a href="apps-school-parents.html" class="pe-nav-link">
-                                        Parents
-                                    </a>
-                                </li>
-                                <li class="pe-slide-item">
-                                    <a href="apps-school-courses.html" class="pe-nav-link">
-                                        Course
-                                    </a>
-                                </li>
-                                <li class="pe-slide-item">
-                                    <a href="apps-school-exam.html" class="pe-nav-link">
-                                        Exam
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                 </li>
@@ -431,6 +306,8 @@
         </div>
     </nav>
 </aside>
+
+{{-- Mobile --}}
 <aside class="pe-app-sidebar horizontal-sidebar" id="horizontal-aside">
     <div>
         <img src="{{ asset('urbix/images/avatar/dummy-avatar.jpg') }}" alt="Avatar Image" class="avatar-md">
@@ -443,7 +320,6 @@
     </div>
     <!-- data-simplebar id="sidebar-simplebar" -->
     <nav class="pe-app-sidebar-menu nav nav-pills">
-
         <ul class="pe-horizontal-menu mb-0 list-unstyled" id="horizontal-menu">
             <!-- Main Menu -->
             <li class="pe-menu-title">Main</li>
@@ -477,159 +353,34 @@
                     </li>
                 </ul>
             </li>
+            <!-- Master -->
+            <li class="pe-menu-title">Master</li>
             <li class="pe-slide pe-has-sub">
-                <a href="#collapseApplications" class="pe-nav-link" data-bs-toggle="collapse" aria-expanded="false"
-                    aria-controls="collapseApplications">
-                    <i class="ri-apps-2-line pe-nav-icon"></i>
-                    <span class="pe-nav-content">Applications</span>
+                <a href="#collapseMasterM1" class="pe-nav-link" data-bs-toggle="collapse" aria-expanded="false"
+                    aria-controls="collapseMasterM1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-car-crane">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M7 18h8m4 0h2v-6a5 5 0 0 0 -5 -5h-1l1.5 5h4.5" />
+                        <path d="M12 18v-11h3" />
+                        <path d="M3 17v-5h9" />
+                        <path d="M4 12v-6l18 -3v2" />
+                        <path d="M8 12v-4l-4 -2" />
+                    </svg>
+                    <span class="pe-nav-content">Alat Berat</span>
                     <i class="ri-arrow-down-s-line pe-nav-arrow"></i>
                 </a>
-                <ul class="pe-slide-menu collapse" id="collapseApplications">
-                    <li class="pe-slide-item">
-                        <a href="apps-calendar.html" class="pe-nav-link">
-                            Calendar
-                        </a>
+                <ul class="pe-slide-menu collapse" id="collapseMasterM1">
+                    <li class="slide pe-nav-content1">
+                        <a href="javascript:void(0)">Alat Berat</a>
                     </li>
                     <li class="pe-slide-item">
-                        <a href="apps-chat.html" class="pe-nav-link">
-                            Chat
+                        <a href="auth-signin.html" class="pe-nav-link">
+                            Data Alat Berat
                         </a>
-                    </li>
-                    <li class="pe-slide-item">
-                        <a href="apps-email.html" class="pe-nav-link">
-                            Email
-                        </a>
-                    </li>
-                    <li class="pe-slide-item">
-                        <a href="apps-kanban.html" class="pe-nav-link">
-                            Kanban
-                        </a>
-                    </li>
-                    <li class="pe-slide-item pe-has-sub">
-                        <a href="#collapseECommerce" class="pe-nav-link" data-bs-toggle="collapse"
-                            aria-expanded="false" aria-controls="collapseECommerce">
-                            <span class="pe-nav-sub-content">E-Commerce</span>
-                            <i class="ri-arrow-down-s-line pe-nav-arrow"></i>
-                        </a>
-                        <ul class="pe-slide-menu collapse" id="collapseECommerce">
-                            <li class="pe-slide-item">
-                                <a href="apps-ecommerce-products.html" class="pe-nav-link">
-                                    Products
-                                </a>
-                            </li>
-                            <li class="pe-slide-item">
-                                <a href="apps-ecommerce-products-list.html" class="pe-nav-link">
-                                    Product List
-                                </a>
-                            </li>
-                            <li class="pe-slide-item">
-                                <a href="apps-ecommerce-products-details.html" class="pe-nav-link">
-                                    Product Details
-                                </a>
-                            </li>
-                            <li class="pe-slide-item">
-                                <a href="apps-ecommerce-create-products.html" class="pe-nav-link">
-                                    Create Product
-                                </a>
-                            </li>
-                            <li class="pe-slide-item">
-                                <a href="apps-ecommerce-customer.html" class="pe-nav-link">
-                                    Customer
-                                </a>
-                            </li>
-                            <li class="pe-slide-item">
-                                <a href="apps-ecommerce-customer-details.html" class="pe-nav-link">
-                                    Customer Details
-                                </a>
-                            </li>
-                            <li class="pe-slide-item">
-                                <a href="apps-ecommerce-order.html" class="pe-nav-link">
-                                    Orders
-                                </a>
-                            </li>
-                            <li class="pe-slide-item">
-                                <a href="apps-ecommerce-order-details.html" class="pe-nav-link">
-                                    Order Details
-                                </a>
-                            </li>
-                            <li class="pe-slide-item">
-                                <a href="apps-ecommerce-cart.html" class="pe-nav-link">
-                                    Cart
-                                </a>
-                            </li>
-                            <li class="pe-slide-item">
-                                <a href="apps-ecommerce-checkout.html" class="pe-nav-link">
-                                    Checkout
-                                </a>
-                            </li>
-                            <li class="pe-slide-item">
-                                <a href="apps-ecommerce-wishlist.html" class="pe-nav-link">
-                                    Wishlist
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="pe-slide-item pe-has-sub">
-                        <a href="#collapseSchool" class="pe-nav-link" data-bs-toggle="collapse"
-                            aria-expanded="false" aria-controls="collapseSchool">
-                            <span class="pe-nav-sub-content">School</span>
-                            <i class="ri-arrow-down-s-line pe-nav-arrow"></i>
-                        </a>
-                        <ul class="pe-slide-menu collapse" id="collapseSchool">
-                            <li class="pe-slide-item pe-has-sub">
-                                <a href="#collapseStudents" class="pe-nav-link" data-bs-toggle="collapse"
-                                    aria-expanded="false" aria-controls="collapseStudent">
-                                    <span class="pe-nav-sub-content">Student</span>
-                                    <i class="ri-arrow-down-s-line pe-nav-arrow"></i>
-                                </a>
-                                <ul class="pe-slide-menu collapse" id="collapseStudents">
-                                    <li class="pe-slide-item">
-                                        <a href="apps-school-students.html" class="pe-nav-link">
-                                            All Students
-                                        </a>
-                                    </li>
-                                    <li class="pe-slide-item">
-                                        <a href="apps-school-admission-form.html" class="pe-nav-link">
-                                            Admission Form
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="pe-slide-item pe-has-sub">
-                                <a href="#collapseTeacher" class="pe-nav-link" data-bs-toggle="collapse"
-                                    aria-expanded="false" aria-controls="collapseTeacher">
-                                    <span class="pe-nav-sub-content">Teacher</span>
-                                    <i class="ri-arrow-down-s-line pe-nav-arrow"></i>
-                                </a>
-                                <ul class="pe-slide-menu collapse" id="collapseTeacher">
-                                    <li class="pe-slide-item">
-                                        <a href="apps-teacher.html" class="pe-nav-link">
-                                            All Teacher
-                                        </a>
-                                    </li>
-                                    <li class="pe-slide-item">
-                                        <a href="apps-teacher-schedule.html" class="pe-nav-link">
-                                            Schedule
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="pe-slide-item">
-                                <a href="apps-school-parents.html" class="pe-nav-link">
-                                    Parents
-                                </a>
-                            </li>
-                            <li class="pe-slide-item">
-                                <a href="apps-school-courses.html" class="pe-nav-link">
-                                    Course
-                                </a>
-                            </li>
-                            <li class="pe-slide-item">
-                                <a href="apps-school-exam.html" class="pe-nav-link">
-                                    Exam
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
             </li>
