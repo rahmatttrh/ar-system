@@ -1,9 +1,10 @@
 <?php
 
-use Illuminate\Foundation\Auth\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Superuser\SuperuserController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,21 +17,55 @@ use App\Http\Controllers\Superuser\SuperuserController;
 |
 */
 
-// Route::middleware(["auth"])->group(function () {
-//    Route::get('/', function () {
-//     return view('home');
-//    });
-// });
-
+// ✅ route bawaan Laravel untuk login, register, logout, dll
 Auth::routes();
 
-Route::middleware(["auth"])->group(function () {
-    Route::get('/', [SuperuserController::class, 'index']);
+// ✅ Default root -> redirect ke halaman login
+Route::get('/', function () {
+    return redirect()->route('login');
 });
 
+// ✅ Route untuk user biasa (setelah login)
+Route::middleware('auth')->group(function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+});
 
+// ✅ Superuser Route
+Route::middleware(['auth', 'role:Superuser'])->group(function () {
+    Route::prefix('super_user')->name('super_user.')->group(function () {
+        Route::get('/', [SuperuserController::class, 'index'])->name('index');
 
-// Auth::routes();
+        // Master Data
+        Route::prefix('master')->name('master.')->group(function () {
+            Route::get('alat_berat', [SuperuserController::class, 'alat_berat'])->name('alat_berat');
+        });
+    });
+});
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// Route::get('/super_user', [App\Http\Controllers\SuperuserController::class, 'index'])->name('home');
+// ✅ AR Module Route
+Route::middleware(['auth'])->group(function () {
+    Route::prefix('ar')->name('ar.')->group(function () {
+        Route::get('/', [App\Http\Controllers\Account_Receivable\ArController::class, 'index'])->name('index');
+    });
+});
+
+// ✅ Pajak Module Route
+Route::middleware(['auth'])->group(function () {
+    Route::prefix('pajak')->name('pajak.')->group(function () {
+        Route::get('/', [App\Http\Controllers\Pajak\PajakController::class, 'index'])->name('index');
+    });
+});
+
+// ✅ Direksi Module Route
+Route::middleware(['auth'])->group(function () {
+    Route::prefix('direksi')->name('direksi.')->group(function () {
+        Route::get('/', [App\Http\Controllers\Direksi\DireksiController::class, 'index'])->name('index');
+    });
+});
+
+// ✅ General Manager Module Route
+Route::middleware(['auth'])->group(function () {
+    Route::prefix('general_manager')->name('general_manager.')->group(function () {
+        Route::get('/', [App\Http\Controllers\General_Manager\GmController::class, 'index'])->name('index');
+    });
+});

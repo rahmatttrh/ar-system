@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -42,5 +43,25 @@ class LoginController extends Controller
     public function username()
     {
         return 'username';
+    }
+
+    protected function redirectTo()
+    {
+        $user = Auth::user();
+
+        switch ($user->role->name) { // asumsi nama kolom role = nm_level
+            case 'Superuser':
+                return '/super_user'; // route untuk Superuser
+            case 'Account Receivable':
+                return '/ar'; // route untuk Account Receivable
+            case 'General Manager':
+                return '/gm'; // route untuk General Manager
+            case 'Direksi':
+                return '/drs'; // route untuk Direksi
+            case 'Pajak':
+                return '/pjk'; // route untuk Pajak
+            default:
+                return RouteServiceProvider::HOME; // default home
+        }
     }
 }
