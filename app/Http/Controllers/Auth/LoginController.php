@@ -53,15 +53,16 @@ class LoginController extends Controller
             case 'Superuser':
                 return '/super_user'; // route untuk Superuser
             case 'Account Receivable':
-                return '/ar'; // route untuk Account Receivable
+                return '/account_receivable'; // route untuk Account Receivable
             case 'General Manager':
-                return '/gm'; // route untuk General Manager
+                return '/general_manager'; // route untuk General Manager
             case 'Direksi':
-                return '/drs'; // route untuk Direksi
+                return '/direksi'; // route untuk Direksi
             case 'Pajak':
-                return '/pjk'; // route untuk Pajak
+                return '/pajak'; // route untuk Pajak
             default:
-                return RouteServiceProvider::HOME; // default home
+                // return RouteServiceProvider::HOME; // default home
+                return redirect('/');
         }
     }
 }

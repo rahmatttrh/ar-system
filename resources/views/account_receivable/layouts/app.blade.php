@@ -53,7 +53,7 @@
 
         <!-- Begin Header -->
 
-        @include('layouts.header')
+        @include('account_receivable.layouts.header')
         <!-- END Header -->
 
         <!-- Search Modal -->
@@ -80,13 +80,13 @@
             </div>
         </div>
 
-        @include('layouts.sidebar')
+        @include('account_receivable.layouts.sidebar')
 
         <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
 
         <main class="app-wrapper">
 
-            @yield('content')
+            @yield('content-account_receivable')
         </main>
 
         <div class="offcanvas offcanvas-end border-0 data-theme-colors layout-customizer" tabindex="-1"

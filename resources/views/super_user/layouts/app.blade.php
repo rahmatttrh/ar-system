@@ -86,7 +86,7 @@
 
         <main class="app-wrapper">
 
-            @yield('content')
+            @yield('content-super_user')
         </main>
 
         <div class="offcanvas offcanvas-end border-0 data-theme-colors layout-customizer" tabindex="-1"

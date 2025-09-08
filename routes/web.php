@@ -3,7 +3,22 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+// Superuser Controller
 use App\Http\Controllers\Superuser\SuperuserController;
+
+// Ar Controller
+use App\Http\Controllers\Account_Receivable\ArController;
+
+// General Manager Controller
+use App\Http\Controllers\General_Manager\GmController;
+
+// Direksi Controller
+use App\Http\Controllers\Direksi\DireksiController;
+
+// Pajak Controller
+use App\Http\Controllers\Pajak\PajakController;
+
+// Home Controller
 use App\Http\Controllers\HomeController;
 
 /*
@@ -26,9 +41,9 @@ Route::get('/', function () {
 });
 
 // ✅ Route untuk user biasa (setelah login)
-Route::middleware('auth')->group(function () {
-    Route::get('/home', [HomeController::class, 'index'])->name('home');
-});
+// Route::middleware('auth')->group(function () {
+//     Route::get('/home', [HomeController::class, 'index'])->name('home');
+// });
 
 // ✅ Superuser Route
 Route::middleware(['auth', 'role:Superuser'])->group(function () {
@@ -43,29 +58,31 @@ Route::middleware(['auth', 'role:Superuser'])->group(function () {
 });
 
 // ✅ AR Module Route
-Route::middleware(['auth'])->group(function () {
-    Route::prefix('ar')->name('ar.')->group(function () {
-        Route::get('/', [App\Http\Controllers\Account_Receivable\ArController::class, 'index'])->name('index');
-    });
-});
-
-// ✅ Pajak Module Route
-Route::middleware(['auth'])->group(function () {
-    Route::prefix('pajak')->name('pajak.')->group(function () {
-        Route::get('/', [App\Http\Controllers\Pajak\PajakController::class, 'index'])->name('index');
-    });
-});
-
-// ✅ Direksi Module Route
-Route::middleware(['auth'])->group(function () {
-    Route::prefix('direksi')->name('direksi.')->group(function () {
-        Route::get('/', [App\Http\Controllers\Direksi\DireksiController::class, 'index'])->name('index');
+Route::middleware(['auth', 'role:Account Receivable'])->group(function () {
+    Route::prefix('account_receivable')->name('account_receivable.')->group(function () {
+        Route::get('/', [ArController::class, 'index'])->name('index');
     });
 });
 
 // ✅ General Manager Module Route
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth', 'role:General Manager'])->group(function () {
     Route::prefix('general_manager')->name('general_manager.')->group(function () {
-        Route::get('/', [App\Http\Controllers\General_Manager\GmController::class, 'index'])->name('index');
+        Route::get('/', [GmController::class, 'index'])->name('index');
     });
 });
+
+// ✅ Direksi Module Route
+Route::middleware(['auth', 'role:Direksi'])->group(function () {
+    Route::prefix('direksi')->name('direksi.')->group(function () {
+        Route::get('/', [DireksiController::class, 'index'])->name('index');
+    });
+});
+
+// ✅ Pajak Module Route
+Route::middleware(['auth', 'role:Pajak'])->group(function () {
+    Route::prefix('pajak')->name('pajak.')->group(function () {
+        Route::get('/', [PajakController::class, 'index'])->name('index');
+    });
+});
+
+

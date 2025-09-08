@@ -10,8 +10,9 @@ class LayoutHelper
 
         return match ($role) {
             'Superuser' => 'super_user.layouts.app',
-            'Account_Receivable' => 'account_receivable.layouts.app',
-            'General_Manager' => 'general_manager.layouts.app',
+            'Account Receivable' => 'account_receivable.layouts.app',
+            'General Manager' => 'general_manager.layouts.app',
+            'Direksi' => 'direksi.layouts.app',
             'Pajak' => 'pajak.layouts.app',
             default => 'layouts.app', // fallback
         };

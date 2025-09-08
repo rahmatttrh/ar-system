@@ -3,7 +3,7 @@
     Dashboard
 @endsection
 
-@section('content')
+@section('content-general_manager')
     <div class="container-fluid">
 
         <div class="main-breadcrumb d-flex align-items-center my-3 position-relative">

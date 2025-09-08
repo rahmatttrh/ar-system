@@ -3,7 +3,7 @@
     Master | Alat Berat
 @endsection
 
-@section('content')
+@section('content-super_user')
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
