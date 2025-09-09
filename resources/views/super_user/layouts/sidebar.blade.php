@@ -73,7 +73,7 @@
                             <a href="javascript:void(0)">Alat Berat</a>
                         </li>
                         <li class="pe-slide-item">
-                            <a href="auth-signin.html" class="pe-nav-link">
+                            <a href="{{ route('super_user.master.alat_berat') }}" class="pe-nav-link">
                                 Data Alat Berat
                             </a>
                         </li>

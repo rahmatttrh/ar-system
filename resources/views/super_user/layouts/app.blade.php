@@ -36,6 +36,10 @@
     <!-- App Css-->
     <link href="{{ asset('urbix/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css">
 
+    
+
+    @yield('css-super_user')
+
     {{-- Table Icons --}}
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.4.0/dist/css/tabler.min.css" /> --}}
 
@@ -676,6 +680,7 @@
     {{-- <script src="{{asset('urbix/js/dashboard/bod.init.js')}}"></script> --}}
 
     @stack('myjs')
+    @yield('js-super_user')
 
 
 

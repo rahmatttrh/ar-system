@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 // Superuser Controller
 use App\Http\Controllers\Superuser\SuperuserController;
+use App\Http\Controllers\Superuser\Master\AlatberatController;
 
 // Ar Controller
 use App\Http\Controllers\Account_Receivable\ArController;
@@ -52,7 +53,7 @@ Route::middleware(['auth', 'role:Superuser'])->group(function () {
 
         // Master Data
         Route::prefix('master')->name('master.')->group(function () {
-            Route::get('alat_berat', [SuperuserController::class, 'alat_berat'])->name('alat_berat');
+            Route::get('alat_berat', [AlatberatController::class, 'index'])->name('alat_berat');
         });
     });
 });
