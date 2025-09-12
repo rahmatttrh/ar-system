@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 // Superuser Controller
 use App\Http\Controllers\Superuser\SuperuserController;
-use App\Http\Controllers\Superuser\Master\AlatberatController;
+use App\Http\Controllers\Superuser\AlatberatController;
 
 // Ar Controller
 use App\Http\Controllers\Account_Receivable\ArController;
@@ -50,11 +50,7 @@ Route::get('/', function () {
 Route::middleware(['auth', 'role:Superuser'])->group(function () {
     Route::prefix('super_user')->name('super_user.')->group(function () {
         Route::get('/', [SuperuserController::class, 'index'])->name('index');
-
-        // Master Data
-        Route::prefix('master')->name('master.')->group(function () {
-            Route::get('alat_berat', [AlatberatController::class, 'index'])->name('alat_berat');
-        });
+        Route::get('alatberat', [AlatberatController::class, 'index'])->name('alatberat');
     });
 });
 

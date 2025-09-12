@@ -36,7 +36,7 @@
     <!-- App Css-->
     <link href="{{ asset('urbix/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css">
 
-    
+
 
     @yield('css-super_user')
 
@@ -681,8 +681,6 @@
 
     @stack('myjs')
     @yield('js-super_user')
-
-
 
     <!-- App js -->
     <script src="{{ asset('urbix/js/app.js') }}"></script>
