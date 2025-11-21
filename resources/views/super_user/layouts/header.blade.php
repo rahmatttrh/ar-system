@@ -2,9 +2,9 @@
     <div class="container-fluid w-100">
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-inline-flex align-items-center gap-2">
-                <a href="index.html" class="align-items-end logo-main d-none me-5">
+                <a href="#" class="align-items-end logo-main d-none me-5">
                     <img height="35" width="34" class="logo-dark" alt="Dark Logo"
-                        src="{{ asset('urbix/flaticon/planet.png') }}">
+                        src="{{ asset('urbix/flaticon/ekanuri.jpg') }}">
                     <h3 class="text-body-emphasis fw-bolder mb-0 ms-1">AR-SYSTEM</h3>
                 </a>
                 <button type="button" class="vertical-toggle btn header-btn" id="toggleSidebar"

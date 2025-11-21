@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{ asset('urbix/flaticon/uranus.png') }}">
+    <link rel="shortcut icon" href="{{ asset('urbix/flaticon/ekanuri.jpg') }}">
     <!-- plugin css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('urbix/libs/jsvectormap/jsvectormap.min.css') }}">
 

@@ -3,9 +3,9 @@
         <!--begin::Brand Image-->
         <a href="index.html" class="d-flex align-items-end logo-main">
             <img height="35" width="34" class="logo-dark" alt="Dark Logo"
-                src="{{ asset('urbix/flaticon/planet.png') }}">
+                src="{{ asset('urbix/flaticon/ekanuri.jpg') }}">
             <img height="35" width="34" class="logo-light" alt="Light Logo"
-                src="{{ asset('urbix/flaticon/planet.png') }}">
+                src="{{ asset('urbix/flaticon/ekanuri.jpg') }}">
             <h3 class="text-body-emphasis fw-bolder mb-0 ms-1">AR-SYSTEM</h3>
         </a>
         <button type="button" id="sidebarDefaultArrow"
