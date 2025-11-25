@@ -19,6 +19,10 @@
             <ul class="pe-main-menu list-unstyled">
                 <!-- Main Menu -->
                 <li class="pe-menu-title">Main</li>
+                    <a href="{{ route('super_user.index') }}" class="pe-nav-link" data-bs-toggle="collapse" aria-expanded="false">
+                        <i class="ri-dashboard-line pe-nav-icon"></i>
+                        <span class="pe-nav-content">Dashboards</span>
+                    </a>
                 <li class="pe-slide pe-has-sub">
                     <a href="#collapseDashboards" class="pe-nav-link" data-bs-toggle="collapse" aria-expanded="false"
                         aria-controls="collapseDashboards">
@@ -49,6 +53,7 @@
                         </li>
                     </ul>
                 </li>
+
                 <!-- Master -->
                 <li class="pe-menu-title">Master</li>
                 <li class="pe-slide pe-has-sub">

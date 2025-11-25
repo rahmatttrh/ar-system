@@ -7,7 +7,7 @@
     <div class="container-fluid">
 
         <div class="main-breadcrumb d-flex align-items-center my-3 position-relative">
-            <h2 class="breadcrumb-title mb-0 flex-grow-1 fs-14">E-Commerce</h2>
+            <h2 class="breadcrumb-title mb-0 flex-grow-1 fs-14">E-Commerce1</h2>
             <div class="flex-shrink-0">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-end mb-0">
